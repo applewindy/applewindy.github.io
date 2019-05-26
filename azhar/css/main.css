@@ -1,0 +1,18 @@
+header {
+  margin: 5px;
+}
+
+.comment {
+  width: 80% !important;
+  text-align: left;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url('../img/menu.png') ;
+}
+
+.bg-top1 {
+  background: url("../img/top1.png") 0 0 repeat;
+  background-repeat: repeat-x;
+  height: 28px;
+  overflow: hidden;
+}
