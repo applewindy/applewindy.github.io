@@ -17,3 +17,13 @@ header {
   overflow: hidden;
 }
 
+.nav-link {
+  padding: .2rem 1rem;;
+}
+
+.modal-content{
+  background-color: #F6CED3;  
+}
+.modal-content a{
+  color: black !important;
+}
