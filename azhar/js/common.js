@@ -3,8 +3,7 @@ $(function () {
   //   $("#dropdown09.span").css($(this).find("span").css());
   // })
   $('header').load('header.html', function(data, status, object) {
-    var path = location.href.split('/');
-    var pages = path.pop();
+    var pages = (typeof menuLink === 'undefined')?location.href.split('/').pop():menuLink;
     $('.nav-link[href="'+pages+'"]').addClass('active');
   });
 });
