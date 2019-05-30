@@ -23,10 +23,11 @@ header {
 a.nav-link.active{
   color: red;
 }
+
 .modal-content{
   background-color: #F6CED3;  
 }
-.modal-content .nav-link{
+.modal-content a{
   color: black;
 }
 
