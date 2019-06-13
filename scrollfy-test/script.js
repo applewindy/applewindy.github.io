@@ -30,7 +30,7 @@ $(function(){
 		section:".section",
 		setHeights:false,
 		updateHash:false,
-		touchScroll: false,
+		touchScroll: true,
 		responsiveFallback:false,
 		scrollbars: true,
 		before: function(){
