@@ -49,7 +49,7 @@ $(window).scroll(function() {
 			&& $.scrollify.isDisabled()
 			&& $('.section').get(current).getBoundingClientRect().top>0) {
 			$.scrollify.enable();
-			$.scrollify.previous();
+			//$.scrollify.previous();
 			console.log('scrollUp');
 		}
     position = scroll;
