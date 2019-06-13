@@ -1,11 +1,6 @@
 jQuery(function($){
 // match height
 $(document).ready(function(){
-	offsetScrollOff();
-
-    $(window).resize(function() {
-		offsetScrollOff();
-    });
 });
 
 
@@ -15,20 +10,20 @@ function offsetScrollOff() {
 	console.log('left: ' + off.left);
 }
 
-
-
-
 // scroll
 var current;
 $(function(){
 	$.scrollify({
 		section:".section",
-		setHeights:false,
+		setHeights:true,
 		updateHash:false,
 		touchScroll: true,
 		responsiveFallback:false,
 		scrollbars: true,
 		standardScrollElements:".third",
+		afterResize:function(){
+			$.scrollify.update();
+		},
 		before: function(){
 			$('.section').removeClass('active');
 		},
@@ -38,15 +33,6 @@ $(function(){
 		},
 		//interstitialSection:"header,footer",
 		//touchScroll: false
-	});
-
-
-	$(window).on('resize',function(){
-		$.scrollify.update();
-
-
-
-
 	});
 });	
 });
