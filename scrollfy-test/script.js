@@ -33,6 +33,7 @@ $(function(){
 		touchScroll: true,
 		responsiveFallback:false,
 		scrollbars: true,
+		standardScrollElements:".third"
 		before: function(){
 			$('.section').removeClass('active');
 		},
