@@ -1,9 +1,5 @@
-jQuery(function($){
+
 // match height
-$(document).ready(function(){
-});
-
-
 function offsetScrollOff() {
 	var off = $('#sec04').offset();
 	console.log('top: ' + off.top);
@@ -12,29 +8,28 @@ function offsetScrollOff() {
 
 // scroll
 var current;
-$(function(){
 	$.scrollify({
 		section:".section",
-		easing:"swing",
+		// easing:"swing",
 		setHeights:true,
 		updateHash:false,
 		touchScroll: true,
 		responsiveFallback:false,
 		scrollbars: true,
-		standardScrollElements:".third",
+		standardScrollElements:".last",
 		afterResize:function(){
 			$.scrollify.update();
+			$.scrollify.instantNext();
+			$.scrollify.instantPrevious();
 		},
-		before: function(){
-			$('.section').removeClass('active');
+		before: function(i,box){
+			current = i;
 		},
 		after: function(){
-			current = $.scrollify.current();
-			current.addClass('active');
+			offsetScrollOff();
 		},
 		interstitialSection:"header,footer",
 		//touchScroll: false
 	});
-});	
-});
+
 
