@@ -8,6 +8,7 @@ function offsetScrollOff() {
 
 // scroll
 var current;
+$(function(){
 	$.scrollify({
 		section:".section",
 		// easing:"swing",
@@ -16,20 +17,40 @@ var current;
 		touchScroll: true,
 		responsiveFallback:false,
 		scrollbars: true,
-		standardScrollElements:".last",
+		// standardScrollElements:".last",
 		afterResize:function(){
 			$.scrollify.update();
 			$.scrollify.instantNext();
 			$.scrollify.instantPrevious();
 		},
 		before: function(i,box){
+			offsetScrollOff();
 			current = i;
 		},
 		after: function(){
-			offsetScrollOff();
 		},
 		interstitialSection:"header,footer",
 		//touchScroll: false
 	});
+});
 
+var position = $(window).scrollTop(); 
 
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+		if(scroll > position
+				&& current === 3
+				&& !$.scrollify.isDisabled()) {
+				$.scrollify.disable();
+				console.log('scrollDown');
+		}
+		if(scroll < position
+			&& current === 3
+			&& $.scrollify.isDisabled()
+			&& $('.section').get(current).getBoundingClientRect().top>0) {
+			$.scrollify.enable();
+			$.scrollify.previous();
+			console.log('scrollUp');
+		}
+    position = scroll;
+});
