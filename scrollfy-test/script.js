@@ -30,7 +30,7 @@ $(function(){
 		section:".section",
 		setHeights:false,
 		updateHash:false,
-		touchScroll: true,
+		touchScroll: false,
 		responsiveFallback:false,
 		before: function(){
 			$('.section').removeClass('active');
