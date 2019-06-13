@@ -31,6 +31,7 @@ $(function(){
 		setHeights:false,
 		updateHash:false,
 		touchScroll: true,
+		responsiveFallback:false,
 		before: function(){
 			$('.section').removeClass('active');
 		},
