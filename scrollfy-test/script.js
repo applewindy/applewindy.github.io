@@ -32,6 +32,7 @@ $(function(){
 		updateHash:false,
 		touchScroll: false,
 		responsiveFallback:false,
+		scrollbars: true,
 		before: function(){
 			$('.section').removeClass('active');
 		},
