@@ -15,6 +15,7 @@ var current;
 $(function(){
 	$.scrollify({
 		section:".section",
+		easing:"swing",
 		setHeights:true,
 		updateHash:false,
 		touchScroll: true,
@@ -31,7 +32,7 @@ $(function(){
 			current = $.scrollify.current();
 			current.addClass('active');
 		},
-		//interstitialSection:"header,footer",
+		interstitialSection:"header,footer",
 		//touchScroll: false
 	});
 });	
