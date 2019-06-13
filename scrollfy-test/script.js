@@ -30,6 +30,7 @@ $(function(){
 		section:".section",
 		setHeights:false,
 		updateHash:false,
+		touchScroll: true,
 		before: function(){
 			$('.section').removeClass('active');
 		},
