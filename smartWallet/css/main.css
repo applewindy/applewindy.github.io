@@ -1,0 +1,1000 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 14px;
+}
+.v360_11598 {
+  width: 100%;
+  height: 2475px;
+  background: rgba(255,255,255,1);
+  padding: 10px 10px;
+  margin: 10px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11599 {
+  width: 100%;
+  height: 499px;
+  background: rgba(247,249,252,1);
+  margin: 10px;
+  opacity: 1;
+  position: absolute;
+  top: 1225px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11600 {
+  width: 937px;
+  height: 458px;
+  background: url("../images/v360_11600.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 252px;
+  overflow: hidden;
+}
+.v360_11601 {
+  width: 335px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 0px;
+  left: 302px;
+  font-family: Avenir Next;
+  font-weight: Demi Bold;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11602 {
+  width: 937px;
+  height: 378px;
+  background: url("../images/v360_11602.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11603 {
+  width: 299px;
+  height: 378px;
+  background: rgba(255,255,255,1);
+  padding: 22px 22px;
+  margin: 10px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+}
+.v360_11604 {
+  width: 255px;
+  height: 334px;
+  background: url("../images/v360_11604.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  overflow: hidden;
+}
+.v360_11605 {
+  width: 78px;
+  height: 28px;
+  background: url("../images/v360_11605.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 89px;
+  overflow: hidden;
+}
+.v360_11606 {
+  width: 78px;
+  height: 28px;
+  background: rgba(64,147,189,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  overflow: hidden;
+}
+.v360_11607 {
+  width: 40px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 0px;
+  left: 19px;
+  font-family: Yu Gothic;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11608 {
+  width: 247px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 48px;
+  left: 4px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 19px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11609 {
+  width: 255px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 91px;
+  left: 0px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+.v360_11610 {
+  width: 143px;
+  height: 143px;
+  background: url("../images/v360_11610.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 191px;
+  left: 56px;
+  overflow: hidden;
+}
+.v360_11611 {
+  width: 299px;
+  height: 378px;
+  background: rgba(255,255,255,1);
+  padding: 22px 22px;
+  margin: 10px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 319px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+}
+.v360_11612 {
+  width: 255px;
+  height: 334px;
+  background: url("../images/v360_11612.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  overflow: hidden;
+}
+.v360_11613 {
+  width: 78px;
+  height: 28px;
+  background: url("../images/v360_11613.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 89px;
+  overflow: hidden;
+}
+.v360_11614 {
+  width: 78px;
+  height: 28px;
+  background: rgba(64,147,189,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  overflow: hidden;
+}
+.v360_11615 {
+  width: 40px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 0px;
+  left: 19px;
+  font-family: Yu Gothic;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11616 {
+  width: 247px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 48px;
+  left: 4px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 19px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11617 {
+  width: 255px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 91px;
+  left: 0px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11618 {
+  width: 143px;
+  height: 143px;
+  background: url("../images/v360_11618.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 191px;
+  left: 56px;
+  border: 4px solid rgba(255,255,255,1);
+  overflow: hidden;
+}
+.v360_11619 {
+  width: 299px;
+  height: 378px;
+  background: rgba(255,255,255,1);
+  padding: 22px 22px;
+  margin: 10px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 638px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+}
+.v360_11620 {
+  width: 255px;
+  height: 334px;
+  background: url("../images/v360_11620.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  overflow: hidden;
+}
+.v360_11621 {
+  width: 78px;
+  height: 28px;
+  background: url("../images/v360_11621.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 89px;
+  overflow: hidden;
+}
+.v360_11622 {
+  width: 78px;
+  height: 28px;
+  background: rgba(64,147,189,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  overflow: hidden;
+}
+.v360_11623 {
+  width: 40px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 0px;
+  left: 19px;
+  font-family: Yu Gothic;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11624 {
+  width: 247px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 48px;
+  left: 4px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 19px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11625 {
+  width: 255px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 91px;
+  left: 0px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11626 {
+  width: 143px;
+  height: 143px;
+  background: url("../images/v360_11626.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 191px;
+  left: 56px;
+  border-top-left-radius: 143px;
+  border-top-right-radius: 143px;
+  border-bottom-left-radius: 143px;
+  border-bottom-right-radius: 143px;
+  overflow: hidden;
+}
+.v360_11627 {
+  width: 100%;
+  height: 174px;
+  background: url("../images/v360_11627.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2301px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11628 {
+  width: 100%;
+  height: 174px;
+  background: rgba(247,249,252,1);
+  padding: 16px 49px;
+  margin: 10px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11629 {
+  width: 937px;
+  height: 78px;
+  background: url("../images/v360_11629.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 252px;
+  overflow: hidden;
+}
+.v360_11630 {
+  width: 937px;
+  height: 28px;
+  background: url("../images/v360_11630.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 30px;
+  opacity: 1;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11631 {
+  width: 138px;
+  height: 28px;
+  background: url("../images/v360_11631.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 291px;
+  overflow: hidden;
+}
+.v360_11632 {
+  width: 104px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 6px;
+  left: 459px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11633 {
+  width: 52px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 6px;
+  left: 593px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11634 {
+  width: 131px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 108px;
+  left: 654px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11635 {
+  width: 100%;
+  height: 576px;
+  background: url("../images/v360_11635.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 88px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11636 {
+  width: 100%;
+  height: 88px;
+  background: url("../images/v360_11636.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11637 {
+  width: 48px;
+  height: 36px;
+  /* background: url("../images/v360_11637.png"); */
+  background: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 22px;
+  left: 252px;
+  overflow: hidden;
+}
+.v360_11638 {
+  width: 470px;
+  /* height: 16px; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* margin: 30px; */
+  opacity: 1;
+  position: absolute;
+  top: 36px;
+  left: 331px;
+  overflow: hidden;
+}
+.v360_11639 {
+  width: 170px;
+  color: rgba(22,22,22,1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: Avenir Next;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11640 {
+  width: 112px;
+  color: rgba(22,22,22,1);
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  font-family: Avenir Next;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11641 {
+  width: 128px;
+  color: rgba(22,22,22,1);
+  position: absolute;
+  top: 0px;
+  left: 342px;
+  font-family: Avenir Next;
+  font-weight: Medium;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11642 {
+  width: 200px;
+  height: 45px;
+  background: url("../images/v360_11642.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 22px;
+  left: 1021px;
+  overflow: hidden;
+}
+.v360_11643 {
+  width: 200px;
+  height: 45px;
+  background: rgba(64,147,189,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+}
+.v360_11644 {
+  width: 199px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  font-family: Avenir Next;
+  font-weight: Bold;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11645 {
+  width: 375px;
+  height: 517px;
+  background: url("../images/v360_11645.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1754px;
+  left: 532px;
+  overflow: hidden;
+}
+.v360_11646 {
+  width: 335px;
+  height: 80px;
+  background: url("../images/v360_11646.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  overflow: hidden;
+}
+.v360_11647 {
+  width: 335px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Avenir Next;
+  font-weight: Demi Bold;
+  font-size: 24px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11648 {
+  width: 375px;
+  height: 407px;
+  background: rgba(247,249,252,1);
+  margin: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11649 {
+  width: 335px;
+  height: 225px;
+  background: url("../images/v360_11649.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  overflow: hidden;
+}
+.v360_11650 {
+  width: 336px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 245px;
+  left: 19px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.v360_11651 {
+  width: 334px;
+  height: 48px;
+  background: url("../images/v360_11651.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 357px;
+  left: 20px;
+  overflow: hidden;
+}
+.v360_11652 {
+  width: 158px;
+  height: 48px;
+  background: url("../images/v360_11652.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11653 {
+  width: 159px;
+  height: 48px;
+  background: url("../images/v360_11653.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 174px;
+  overflow: hidden;
+}
+.v360_11654 {
+  width: 100%;
+  height: 371px;
+  background: url("../images/v360_11654.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 824px;
+  left: 25px;
+  overflow: hidden;
+}
+.v360_11655 {
+  width: 100%;
+  height: 371px;
+  background: url("../images/v360_11655.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 20px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11656 {
+  width: 686px;
+  height: 332px;
+  background: rgba(255,255,255,1);
+  padding: 22px 22px;
+  margin: 10px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+}
+.v360_11657 {
+  width: 652px;
+  height: 288px;
+  background: url("../images/v360_11657.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 22px;
+  left: 17px;
+  overflow: hidden;
+}
+.v360_11658 {
+  width: 324px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 0px;
+  left: 165px;
+  font-family: Avenir Next;
+  font-weight: Bold;
+  font-size: 19px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11659 {
+  width: 652px;
+  height: 245px;
+  background: url("../images/v360_11659.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 43px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11660 {
+  width: 424px;
+  height: 211px;
+  background: url("../images/v360_11660.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11661 {
+  width: 203px;
+  height: 245px;
+  background: url("../images/v360_11661.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 450px;
+  overflow: hidden;
+}
+.v360_11662 {
+  width: 203px;
+  color: rgba(64,147,189,1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: Avenir Next;
+  font-weight: Bold;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11663 {
+  width: 200px;
+  height: 200px;
+  background: url("../images/v360_11663.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 45px;
+  left: 2px;
+  overflow: hidden;
+}
+.v360_11664 {
+  width: 686px;
+  height: 371px;
+  background: rgba(255,255,255,1);
+  padding: 22px 22px;
+  margin: 10px;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 706px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+}
+.v360_11665 {
+  width: 628px;
+  height: 327px;
+  background: url("../images/v360_11665.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 22px;
+  left: 29px;
+  overflow: hidden;
+}
+.v360_11666 {
+  width: 445px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 0px;
+  left: 92px;
+  font-family: Avenir Next;
+  font-weight: Bold;
+  font-size: 19px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11667 {
+  width: 628px;
+  height: 284px;
+  background: url("../images/v360_11667.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 43px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11668 {
+  width: 387px;
+  height: 284px;
+  background: url("../images/v360_11668.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v360_11669 {
+  width: 203px;
+  height: 245px;
+  background: url("../images/v360_11669.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 426px;
+  overflow: hidden;
+}
+.v360_11670 {
+  width: 203px;
+  color: rgba(64,147,189,1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: Avenir Next;
+  font-weight: Bold;
+  font-size: 15px;
+  opacity: 1;
+  text-align: center;
+}
+.v360_11671 {
+  width: 200px;
+  height: 200px;
+  background: url("../images/v360_11671.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 45px;
+  left: 1px;
+  overflow: hidden;
+}
+.v360_11672 {
+  width: 937px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 754px;
+  left: 252px;
+  font-family: Avenir Next;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+.v360_11673 {
+  width: 937px;
+  color: rgba(21,21,21,1);
+  position: absolute;
+  top: 720px;
+  left: 252px;
+  font-family: Avenir Next;
+  font-weight: Bold;
+  font-size: 19px;
+  opacity: 1;
+  text-align: center;
+}

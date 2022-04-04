@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Avenir+Next&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Yu+Gothic&display=swap" rel="stylesheet" /> -->
+    <link href="./css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <link href="./css/main.css" rel="stylesheet" /> -->
+    <title>Document</title>
+    <script>
+        $(window).on('load',function(){
+            var trigger_btn = $('#menuWrap'),
+                wrap = $('#wrap'),
+                navMenu = $('#menuBody'),
+                menuCircle = $('#menuCircle'),
+                pagemenu_title = $('#menuBody .inMotion');
+            var windowWidth = $(window).width();
+            var windowResponsive = 768;
+            // menu open ====================
+            trigger_btn.on('click', function(){
+                if (windowWidth <= windowResponsive) {
+                    //sp
+                    if (!wrap.hasClass('menu_on')) {
+                        // no class
+                        wrap.addClass('menu_on');
+                        navMenu.css('display', 'block');
+                    }else{
+                        // class active
+                        wrap.removeClass('menu_on');
+                        navMenu.css('display', 'none');
+                    }
+                }else{
+                    //pc
+                    if (!wrap.hasClass('menu_on')) {
+                        // no class
+                        wrap.addClass('menu_on');
+                        navMenu.css('display', 'block');
+                    }else{
+                        // class active
+                        wrap.removeClass('menu_on');
+                        navMenu.css('display', 'none');
+                    }
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="menu-main-button sp">
+            <div id="menuWrap" class="menuWrap" style="opacity: 1;">
+                <div id="menuBtn" class="menuBtn">
+                    <div class="menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menuBody" class="sp">
+            <nav id="menuCircle" style="opacity: 1;">
+                <div class="spMenuHeader">
+                    <div class="inHead">
+                        <div class="spLogo">
+                            <a href="">
+                                <img class="fit" src="./images/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /spMenuHeader -->
+                <div class="menu_content">
+                    <div class="menu_inner">
+                        <ul class="menu_list">
+                            <li class="spXX">
+                                <div class="inMotion menuDesign menuIcon noTabLink">
+                                    <a href="" data-scroll="100">
+                                        <dl>
+                                            <dt>SmartWallet公式サイト</dt>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="spXX">
+                                <div class="inMotion menuDesign menuIcon noTabLink">
+                                    <a href="" data-scroll="100">
+                                        <dl>
+                                            <dt>イベントサイト</dt>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="spXX">
+                                <div class="inMotion menuDesign menuIcon noTabLink">
+                                    <a href="" data-scroll="100">
+                                        <dl>
+                                            <dt>運営会社について</dt>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="pagemenu_bg" class="menu_background" style="opacity: 1;"></div>
+            <div id="pagemenu_bg_opacity"></div>
+        </div>
+        <header>
+            <div class="headerInner">
+                <div id="headLogo">
+                    <h1 class="h1"><a href="/"><img class="fit" src="./images/logo.png" alt=""></a></h1>
+                </div>  
+                <nav class="pc">
+                    <ul>
+                        <li>
+                            <a href="">SmartWallet公式サイト</a>
+                        </li>
+                        <li>
+                            <a href="">イベントサイト</a>
+                        </li>
+                        <li>
+                            <a href="">運営会社について</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="headerRightMenu pc">
+                    <div class="flex">
+                        <a class="in" href="/">
+                            <span class="txt">お問い合わせ</span>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </header>
+        <article>
+            <div class="background">
+                <img src="./images/v360_11635.png">
+            </div>
+            <div class="busInfo">
+                <div class="sectionTitle">自動運転バス 運行情報</div>
+                <div >移動の利便性向上のため、最先端の技術を活用した自動運転バスが定期運行しています。</div>
+            </div>
+            <div class="routeInfo">
+                <div class="flexWrap">
+                    <div class="sectionTitle">HICity内循環</div>
+                    <div class="map">
+                        <img src="./images/v360_11660.png">
+                    </div>
+                    <div class="bold">
+                        羽田イノベーションシティの敷地内を周遊するルート。気軽に自動運転を体験できます。
+                    </div>
+                    <ul>
+                        <li>・1周約8分</li>
+                        <li>・1周はアーティストビレッジから</li>
+                        <li>・ゾーンJからの乗車は半周</li>
+                        <li>・定員10名</li>
+                    </ul>
+                    <div class="applyButton sp">
+                        <div class="flex">
+                            <a class="in" href="/">
+                                <span class="txt">申し込み</span>
+                            </a>
+                        </div>
+                    </div>        
+                    <div class="qrcode pc">
+                        <div>▼お申し込みはスマホでQRコード読み取り！</div>
+                        <div>
+                            <img src="./images/v360_11663.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="flexWrap">
+                    <div class="sectionTitle">HICityー羽田第３ターミナル</div>
+                    <div class="map">
+                        <img src="./images/v360_11668.png">
+                    </div>
+                    <div class="bold">
+                        羽田イノベーションシティと羽田空港第3ターミナルを結ぶルート。自動運転で街中を走る未来のバスを体験できます。
+                    </div>
+                    <ul>
+                        <li>・1周約30分、片道約15分</li>
+                        <li>・1周する場合はチケットを2枚予約必要</li>
+                        <li>・定員5名</li>
+                    </ul>
+                    <div class="applyButton sp">
+                        <div class="flex">
+                            <a class="in" href="/">
+                                <span class="txt">申し込み</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="qrcode pc">
+                        <div><span>▼</span>お申し込みはスマホでQRコード読み取り！</div>
+                        <div>
+                            <img src="./images/v360_11671.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="receptionInfo centerSection">
+                <div class="sectionTitle">
+                    当日の受付方法
+                </div>
+                <div class="flexWrap">
+                    <div class="stepInfo">
+                        <div><span>Step 1</span></div>
+                        <div>
+                        <div>スマホを持って受付へ</div>
+                        <div class="left">
+                            ハンズフリー設定を必ずオンにしてください。通信ができない場合位はアプリからQRコードを表示して受付で提示してください。
+                        </div>
+                    </div>
+                        <div>
+                            <img src="./images/v360_11610.png">
+                        </div>
+                    </div>
+                    <div class="stepInfo">
+                        <div><span>Step 2</span></div>
+                        <div>
+                        <div>表示された名前をタップ</div>
+                        <div>
+                            表示された名前を<br>たっぷしてください。
+                        </div>
+                    </div>
+                        <div>
+                            <img src="./images/v360_11618.png">
+                        </div>
+                    </div>
+                    <div class="stepInfo">
+                        <div><span>Step 3</span></div>
+                        <div>
+                        <div>完了！</div>
+                        <div>
+                            受付の音が鳴ったら完了です。
+                        </div>
+                    </div>
+
+                        <div>
+                            <img src="./images/v360_11626.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="appInfo centerSection">
+                <div class="sectionTitle">SmartWalletとは</div>
+                <div>
+                    <img src="./images/v360_11649.png">
+                </div>
+                <div>Bluetoothをオンにするだけ。鍵のかかったドアやレジ、ホテルのチェックインなど、日常生活における待ち時間をスマートに短縮。Smart
+                    Walletは、「シームレスな世界」を創造します。</div>
+                <div class="apps">
+                    <div>
+                        <img src="./images/v360_11652.png">
+                    </div>
+                    <div>
+                        <img src="./images/v360_11653.png">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <div class="footerMenu">
+            <div>
+                <img src="./images/v360_11631.png">
+            </div>
+            <div>運営会社について</div>
+            <div>利用規約</div>
+        </div>
+        <div class="copy 1v360_11634">@Payless Gate Co, ltd.</div>
+    </footer>
+
+</body>
+
+</html>
