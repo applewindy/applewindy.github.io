@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Avenir+Next&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Yu+Gothic&display=swap" rel="stylesheet" /> -->
+    <link href="./css/style_notfound.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(window).on('load',function(){
+            var trigger_btn = $('#menuWrap'),
+                wrap = $('#header-wrap'),
+                navMenu = $('#menuBody'),
+                menuCircle = $('#menuCircle'),
+                pagemenu_title = $('#menuBody .inMotion'),
+                toggle_title = $('.toggle-title');
+            var windowWidth = $(window).width();
+            var windowResponsive = 768;
+            $(window).resize(function() {
+                windowWidth = $(window).width();
+            });
+            // menu open ====================
+            trigger_btn.on('click', function(){
+                if (windowWidth <= windowResponsive) {
+                    //sp
+                    if (!wrap.hasClass('menu_on')) {
+                        // no class
+                        wrap.addClass('menu_on');
+                        navMenu.css('display', 'block');
+                    }else{
+                        // class active
+                        wrap.removeClass('menu_on');
+                        navMenu.css('display', 'none');
+                    }
+                }else{
+                    //pc
+                    if (!wrap.hasClass('menu_on')) {
+                        // no class
+                        wrap.addClass('menu_on');
+                        navMenu.css('display', 'block');
+                    }else{
+                        // class active
+                        wrap.removeClass('menu_on');
+                        navMenu.css('display', 'none');
+                    }
+                }
+            });
+            toggle_title.on('click', function(){
+                if (windowWidth <= windowResponsive) {
+                    //sp
+                    $(this).toggleClass('opened');
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="header-wrap">
+        <div class="menu-main-button sp">
+            <div id="menuWrap" class="menuWrap" style="opacity: 1;">
+                <div id="menuBtn" class="menuBtn">
+                    <div class="menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menuBody" class="sp">
+            <nav id="menuCircle" style="opacity: 1;">
+                <div class="spMenuHeader">
+                    <div class="inHead">
+                        <div class="spLogo">
+                            <a href="">
+                                <img class="fit" src="./images/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /spMenuHeader -->
+                <div class="menu_content">
+                    <div class="menu_inner">
+                        <ul class="menu_list">
+                            <li class="spXX">
+                                <div class="inMotion menuDesign menuIcon noTabLink">
+                                    <a href="https://lp.paylessgate.com/speeidy/" data-scroll="100">
+                                        <dl>
+                                            <dt>SpeeIDy公式サイト</dt>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="spXX">
+                                <div class="inMotion menuDesign menuIcon noTabLink">
+                                    <a href="" data-scroll="100">
+                                        <dl>
+                                            <dt>イベントサイト</dt>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="spXX">
+                                <div class="inMotion menuDesign menuIcon noTabLink">
+                                    <a href="https://sites.google.com/paylessgate.com/paylessgateces/" data-scroll="100">
+                                        <dl>
+                                            <dt>運営会社</dt>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="pagemenu_bg" class="menu_background" style="opacity: 1;"></div>
+            <div id="pagemenu_bg_opacity"></div>
+        </div>
+        <header>
+            <div class="headerInner">
+                <div id="headLogo">
+                    <h1 class="h1"><a href="/"><img class="fit" src="./images/logo.png" alt=""></a></h1>
+                </div>  
+                <nav class="pc">
+                    <ul>
+                        <li>
+                            <a href="https://lp.paylessgate.com/speeidy/">SpeeIDy公式サイト</a>
+                        </li>
+                        <li>
+                            <a href="">イベントサイト</a>
+                        </li>
+                        <li>
+                            <a href="https://sites.google.com/paylessgate.com/paylessgateces/">運営会社</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="headerRightMenu pc">
+                    <div class="flex">
+                        <a class="in" href="https://docs.google.com/forms/d/e/1FAIpQLSfdeRtTGjuTtrp7Kv204Aql5-EhUcBpRHg4qdNH2X3mQMhDuQ/formrestricted">
+                            <span class="txt">お問い合わせ</span>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </header>
+    </div>
+    <div id="not_found">
+        <div class="img_topleft pc">
+            <img src="./images/error_topleft.png">
+        </div>
+        <div class="img_topright pc">
+            <img src="./images/error_topright.png">
+        </div>
+        <div class="title">404</div>
+        <div class="subtitle">Page Not Found</div>
+        <div class="detail">
+            お探しのページは一次的にアクセスできない状況にあるか、<br class="pc">もしくは削除された可能性があります。
+        </div>
+        <div class="css_button pc">
+            <button class="button_left">公式サイトを見る</button>
+            <button class="button_right">イベントサイトを見る</button>
+        </div>
+        <div class="css_button sp">
+            <button class="button_left">公式サイト</button>
+            <button class="button_right">イベントサイト</button>
+        </div>
+        
+        <div class="img_bottomleft pc">
+            <img src="./images/error_bottomleft.png">
+        </div>
+        <div class="img_bottomright pc">
+            <img src="./images/error_bottomleft.png">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footerMenu">
+            <div>
+                <img src="./images/v360_11631.png">
+            </div>
+            <div>運営会社について</div>
+            <div>利用規約</div>
+        </div>
+        <div class="copy">@Payless Gate Co, ltd.</div>
+    </footer>
+
+</body>
+
+</html>

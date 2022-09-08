@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="./css/style1.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        function getParam(name) {
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(location.href);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        const event_id = getParam("id");
+        $(window).on('load',function(){
+            $.ajax(`https://develop.pregi.api.paylessgate.com/api/card/${event_id}/lp`, { type: 'get' })
+                .done((data) => {
+                    const index= 0;
+                    $(`.receptionInfo>.sectionDetail`).eq(index).addClass("current");
+                })
+                .fail(() => {
+                    $(`.receptionInfo>.sectionDetail`).eq(2).addClass("current");
+                });
+
+            var trigger_btn = $('#menuWrap'),
+                wrap = $('#header-wrap'),
+                navMenu = $('#menuBody'),
+                menuCircle = $('#menuCircle'),
+                pagemenu_title = $('#menuBody .inMotion'),
+                toggle_title = $('.toggle-title');
+            var windowWidth = $(window).width();
+            var windowResponsive = 768;
+            $(window).resize(function() {
+                windowWidth = $(window).width();
+            });
+            // menu open ====================
+            trigger_btn.on('click', function(){
+                if (windowWidth <= windowResponsive) {
+                    //sp
+                    if (!wrap.hasClass('menu_on')) {
+                        // no class
+                        wrap.addClass('menu_on');
+                        navMenu.css('display', 'block');
+                    }else{
+                        // class active
+                        wrap.removeClass('menu_on');
+                        navMenu.css('display', 'none');
+                    }
+                }else{
+                    //pc
+                    if (!wrap.hasClass('menu_on')) {
+                        // no class
+                        wrap.addClass('menu_on');
+                        navMenu.css('display', 'block');
+                    }else{
+                        // class active
+                        wrap.removeClass('menu_on');
+                        navMenu.css('display', 'none');
+                    }
+                }
+            });
+            toggle_title.on('click', function(){
+                if (windowWidth <= windowResponsive) {
+                    //sp
+                    $(this).toggleClass('opened');
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="header-wrap">
+        <div class="menu-main-button sp">
+            <div id="menuWrap" class="menuWrap" style="opacity: 1;">
+                <div id="menuBtn" class="menuBtn">
+                    <div class="menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menuBody" class="sp">
+            <nav id="menuCircle" style="opacity: 1;">
+                <div class="spMenuHeader">
+                    <div class="inHead">
+                        <div class="spLogo">
+                            <a href="">
+                                <img class="fit" src="./images/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /spMenuHeader -->
+                <div class="menu_content">
+                    <div class="menu_inner">
+                        <ul class="menu_list">
+                            <li class="spXX">
+                                <div class="inMotion menuDesign menuIcon noTabLink">
+                                    <a href="https://lp.paylessgate.com/speeidy/" data-scroll="100">
+                                        <dl>
+                                            <dt>SpeeIDy公式サイト</dt>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="spXX">
+                                <div class="inMotion menuDesign menuIcon noTabLink">
+                                    <a href="" data-scroll="100">
+                                        <dl>
+                                            <dt>イベントサイト</dt>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="spXX">
+                                <div class="inMotion menuDesign menuIcon noTabLink">
+                                    <a href="https://sites.google.com/paylessgate.com/paylessgateces/" data-scroll="100">
+                                        <dl>
+                                            <dt>運営会社</dt>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="pagemenu_bg" class="menu_background" style="opacity: 1;"></div>
+            <div id="pagemenu_bg_opacity"></div>
+        </div>
+        <header>
+            <div class="headerInner">
+                <div id="headLogo">
+                    <h1 class="h1"><a href="/"><img class="fit" src="./images/logo.png" alt=""></a></h1>
+                </div>  
+                <nav class="pc">
+                    <ul>
+                        <li>
+                            <a href="https://lp.paylessgate.com/speeidy/">SpeeIDy公式サイト</a>
+                        </li>
+                        <li>
+                            <a href="">イベントサイト</a>
+                        </li>
+                        <li>
+                            <a href="https://sites.google.com/paylessgate.com/paylessgateces/">運営会社</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="headerRightMenu pc">
+                    <div class="flex">
+                        <a class="in" href="https://docs.google.com/forms/d/e/1FAIpQLSfdeRtTGjuTtrp7Kv204Aql5-EhUcBpRHg4qdNH2X3mQMhDuQ/formrestricted">
+                            <span class="txt">お問い合わせ</span>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </header>
+    </div>
+    <div id="wrap">
+        <article>
+            <div class="background">
+                <img src="./images/ractangle.png">
+            </div>
+            <div class="busInfo">
+                <div class="sectionTitle padding-sp">HICity内循環 自動運行バス運行情報</div>
+                <div class="busInfoDetail  padding-sp">
+                    <div class="flexWrap">
+                        <div class="centerSelf"><img src="./images/calendar.png"></div>
+                        <div>2022年12月11日 18:30 〜 <br class="sp">2022年12月11日 19:30</div>
+                    </div>
+                    <div><img src="./images/pin.png">大阪府</div>
+                </div>
+            </div>
+            <div class="routeInfo">
+                <div class="flexWrap">
+                    <div class="summary padding-sp">
+                        <div class="sectionTitle toggle-title">開催概要</div>
+                        <div class="sectionDetail">
+                            2020年、羽田空港エリアの天空橋駅（京急／東京モノレール）に直結する大規模複合施設「羽田イノベーションシティ」が本格稼働を始め、その施設内の循環バスとして、国内初となる自律運行バス「羽田イノベーションシティバス」も運行を開始しました。<br>
+                            車両はフランス製の「NAVYA ARMA（ナビヤ アルマ）」11人乗り。毎日10時30分から15時30分まで(11時30分～13時昼休憩)、1時間1本、1周30分で運行しており、どなたでも無料でご乗車いただけます。<br>
+                            この度、羽田イノベーションシティバスの乗車チケット（無料）をスマートフォンでご予
+                        </div>
+                    </div>
+                    <div class="ticket sp padding-sp">
+                        <div class="sectionTitle toggle-title">チケット</div>
+                        <div class="sectionDetail">
+                            <div class="flexWrap">
+                                <div class="flexWrap title">
+                                    <div>参加費</div>
+                                    <div>参加受付</div>
+                                </div>
+                                <div>
+                                    <div>チケット名/10,000円 定員100名</div>
+                                    <div>チケット名/10,000円 定員100名</div>
+                                    <div>チケット名/10,000円 定員100名</div>
+                                    <div>イベント開始の2日前まで</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="receptionInfo padding-sp">
+                        <div class="sectionTitle">SpeeIDyとは</div>
+                        <div class="sectionDetail flexWrap">
+                            <div class="stepInfo">
+                                <div>
+                                    <img src="./images/v360_11610.png">
+                                </div>
+                                <div>
+                                    <div>①スマホを持って受付へ</div>
+                                    <div class="left">
+                                        通信ができない場合はQRコードを表示して提示してください。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stepInfo">
+                                <div>
+                                    <img src="./images/case12.png">
+                                </div>
+                                <div>
+                                    <div>②受付端末にスマホをタッチ</div>
+                                </div>
+                            </div>
+                            <div class="stepInfo">
+                                <div>
+                                    <img src="./images/v360_11626.png">
+                                </div>
+                                <div>
+                                    <div>③完了！</div>
+                                    <div class="left">
+                                        受付の音が鳴ったら完了です。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionDetail flexWrap">
+                            <div class="stepInfo">
+                                <div>
+                                    <img src="./images/v360_11610.png">
+                                </div>
+                                <div>
+                                    <div>①スマホを持って受付へ</div>
+                                    <div class="left">
+                                        通信ができない場合はQRコードを表示して提示してください
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stepInfo">
+                                <div>
+                                    <img src="./images/case22.png">
+                                </div>
+                                <div>
+                                    <div>②名前等を言う</div>
+                                    <div class="left">
+                                        名前等を受付にお伝えください。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stepInfo">
+                                <div>
+                                    <img src="./images/case23.png">
+                                </div>
+                                <div>
+                                    <div>③完了！</div>
+                                    <div class="left">
+                                        受付完了です。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionDetail flexWrap">
+                            <div class="stepInfo">
+                                <div>
+                                    <img src="./images/v360_11610.png">
+                                </div>
+                                <div>
+                                    <div>①スマホを持って受付へ</div>
+                                    <div class="left">
+                                        通信ができない場合はQRコードを表示して提示してください
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stepInfo">
+                                <div>
+                                    <img src="./images/v360_11618.png">
+                                </div>
+                                <div>
+                                    <div>②表示された名前をタップ</div>
+                                    <div class="left">
+                                        表示された名前をタップしてください。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stepInfo">
+                                <div>
+                                    <img src="./images/v360_11626.png">
+                                </div>
+                                <div>
+                                    <div>③完了！</div>
+                                    <div class="left">
+                                        受付の音が鳴ったら完了です。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="flexWrap pc">
+                    <div class="applyInfo">
+                        <div class="sectionTitle">お申し込みはアプリから！</div>
+                        <div>
+                            SpeeIDyは、「シームレスな世界」を創造します。iOSもしくはAndroidアプリをダウンロードし、Bluetoothをオンにするだけ。鍵のかかったドアやレジ、ホテルのチェックインなど、日常生活における待ち時間をスマートに短縮できるます。
+                        </div>
+                        <br>
+                        <div class="flexWrap">
+                            <div><img src="./images/sy_m.png"></div>
+                            <div>
+                                アプリをダウンロードすると、お申し込みから当日のチェックインまでスムーズに行うことができます。<br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket">
+                        <div class="sectionTitle">
+                            チケット
+                        </div>
+                        <div class="sectionDetail">
+                            <div class="flexWrap">
+                                <div class="flexWrap title">
+                                    <div>参加費</div>
+                                    <div>参加受付</div>
+                                </div>
+                                <div>
+                                    <div>チケット名/10,000円 定員100名</div>
+                                    <div>チケット名/10,000円 定員100名</div>
+                                    <div>チケット名/10,000円 定員100名</div>
+                                    <div>イベント開始の2日前まで</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="appInfo sp">
+        <div class="sectionTitle">お申し込みはアプリから！</div>
+        <div class="apps">
+            <div>
+                <a href="https://apps.apple.com/us/app/smart-wallet/id1595007375">
+                    <img src="./images/v360_11652.png">
+                </a>
+            </div>
+            <div>
+                <a href="https://play.google.com/store/apps/details?id=com.paylessgate.busrideappandroid">
+                    <img src="./images/v360_11653.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="qrcode pc">
+        <div>お申し込みは<br>スマホでQRコード読み取り！</div>
+        <div>
+            <img src="./images/qrcode.png">
+        </div>
+    </div>
+    <footer>
+        <div class="footerMenu">
+            <div>
+                <img src="./images/v360_11631.png">
+            </div>
+            <div><a href="https://sites.google.com/paylessgate.com/paylessgateces/">運営会社について</a></div>
+            <div><a href="https://corp.paylessgate.com/terms-of-service/">利用規約</a></div>
+        </div>
+        <div class="copy">@Payless Gate Co, ltd.</div>
+    </footer>
+
+</body>
+
+</html>
